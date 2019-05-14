@@ -1,0 +1,22 @@
+
+body{
+	background-color: #cc99ff;
+}
+
+h1{
+	color: red;
+	text-align: center; /*align text to center*/
+}
+
+
+.square{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	margin: auto; /* puts equal spacing on each side of the element (to center it on page)*/
+}
+
+#circle{ /*ids are traditionally for interacting with elements through javaScript */
+	color: white; /*font colour */
+	font-size: 30px;
+}
