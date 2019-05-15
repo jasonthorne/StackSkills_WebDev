@@ -7,9 +7,10 @@ https://stackskills.com/courses/228011/lectures/3547914
 
 body{
 	background-image: url("../img/laptopImg.jpg");
-	background-repeat: no-repeat; /*stop image being tiled if it's too small for page*/
+	background-size: cover; /*this is JUST for targeting a background image. It ensures that the image fills the whole page*/
+	background-repeat: no-repeat; /*stop image being tiled if it's too small for page (NOT NEEDED HERE)*/
+	
 }
-
 
 
 .container{
@@ -29,4 +30,14 @@ h2{
 	color: rgb(0, 204, 255); /*adding colour using red green blue values*/
 	text-shadow: 1px 1px 3px darkblue; /*vertical axis, horizontal axis, blur radius, shadow colour*/
 }
+
+.borderImg{
+	border: 8px solid red;/*border width, border type, colour */
+	/*border: 8px dashed red;*/
+	/*border: 8px dotted red;*/
+	height: 20%;
+	width: 20%;
+	
+}
+
 
