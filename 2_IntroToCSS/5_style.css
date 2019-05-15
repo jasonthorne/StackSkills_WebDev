@@ -1,0 +1,24 @@
+
+
+/*background gradients link:
+https://stackskills.com/courses/228011/lectures/3547914 
+*/
+
+.container{
+	/*background-color: darkslateblue;*/
+	background: linear-gradient(#99c2ff, #0052cc); 
+	/*background: linear-gradient(to right, #99c2ff, #0052cc);  change gradient from left to right*/ 
+	/*background: linear-gradient(to left, #99c2ff, #0052cc);  change gradient from right to left*/ 
+	box-shadow: 3px 5px 3px black; /*vertical axis, horizontal axis, blur radius, shadow colour*/
+}
+
+h1{
+	color: #ffffff; /*font colour*/
+	text-shadow: 2px 2px 5px black; /*vertical axis, horizontal axis, blur radius, shadow colour*/
+}
+
+h2{
+	color: rgb(0, 204, 255); /*adding colour using red green blue values*/
+	text-shadow: 1px 1px 3px darkblue; /*vertical axis, horizontal axis, blur radius, shadow colour*/
+}
+
