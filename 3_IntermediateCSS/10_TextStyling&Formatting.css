@@ -1,0 +1,78 @@
+
+/*===================================================*/
+/*Setting the standards of what font families we want to use 
+Have multiples, to use as fullback fonts for the browser*/
+
+html{
+	font-family: "Times New Roman", serif, sans-serif; /* multiple word fonts need quotes */
+}
+
+
+body{
+	background-color: #444444;
+	text-align: center; /*center align text*/
+}
+
+/*===================================================*/
+
+h1, h2, h3{ /*apply the styles below styles to ALL of these elements (elements of any type can be grouped)++++++++++++++++++++++++++++++++++++*/
+	color: #ffffff; /*font colour*/
+	line-height: 1rem; /*relative to the font size of the root element +++++++++++++++++++++++++++++++++++++++++++++++*/
+	font-style: italic;
+}
+
+
+/*===================================================*/
+h2{
+	font-size: 30px; /*setting with px sets a HARDSIZE (irrespective of browser or viewport size)*/
+	font-style: normal; /*setting h2 tag back to normal (made italic in selector above */
+}
+
+/*anchor tag styles are blue and underlined by default*/
+a{
+	text-decoration: none; /*removing underline*/
+	font-size: 20px;
+	color: yellow;
+	letter-spacing: 20px; /*spread each letter by 10px*/
+	word-spacing: 30px;
+	text-transform: uppercase; /*change text to uppercase*/
+}
+
+
+.formatting{
+	font-size:25px;
+	line-height: 2em;
+	color: white;
+}
+
+/*===================================================*/
+
+
+.borderImg{
+	border: 8px solid red;/*border width, border type, colour */ /*'Border' is a blanket statement that includes lots of other specific statements like 'border-bottom-color'*/
+	height: 20%;
+	width: 20%;
+}
+
+
+/* DESCENDANTS: */
+ul li { /*targeting all li with a ul parent (at ANY level above it)*/
+	color: white;
+	font-size: 20px;
+}
+
+
+/* CHILD SELECTORS: */
+ul > li { /*targeting all li with a ul parent at a DIRECT level above it)*/
+	color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
