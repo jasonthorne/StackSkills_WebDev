@@ -1,0 +1,85 @@
+/* link to Google fonts:
+https://developers.google.com/fonts/ 
+*/
+
+
+
+
+body{
+	background-color: #444444;
+	text-align: center; /*center align text*/
+}
+
+/* =============================edits from this lesson:=======================================*/
+h1 { 
+	color: #ffffff; /*font colour*/
+	line-height: 1rem; /*relative to the font size of the root element */
+	font-family: "Modak", serif, sans-serif; /* first font is a google font, imported from link in html head*/
+	
+}
+
+
+h2 { 
+	color: #ffffff; /*font colour*/
+	line-height: 2rem; /*relative to the font size of the root element */
+	font-family: "Rock Salt", serif, sans-serif; /* first font is a google font, imported from link in html head*/
+	
+}
+
+
+h3 { 
+	color: #ffffff; /*font colour*/
+	line-height: 2rem; /*relative to the font size of the root element*/
+	font-family: "Sigmar One", serif, sans-serif; /* first font is a google font, imported from link in html head*/
+}
+
+/* =====================================================================================*/
+
+/*anchor tag styles are blue and underlined by default*/
+a{
+	text-decoration: none; /*removing underline*/
+	font-size: 20px;
+	color: yellow;
+	letter-spacing: 20px; /*spread each letter by 10px*/
+	word-spacing: 30px;
+	text-transform: uppercase; /*change text to uppercase*/
+}
+
+
+.formatting{
+	font-size:25px;
+	line-height: 2em;
+	color: white;
+}
+
+
+
+
+.borderImg{
+	border: 8px solid red;/*border width, border type, colour */ /*'Border' is a blanket statement that includes lots of other specific statements like 'border-bottom-color'*/
+	height: 20%;
+	width: 20%;
+}
+
+
+/* DESCENDANTS: */
+ul li { /*targeting all li with a ul parent (at ANY level above it)*/
+	color: white;
+	font-size: 20px;
+}
+
+
+/* CHILD SELECTORS: */
+ul > li { /*targeting all li with a ul parent at a DIRECT level above it)*/
+	color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
