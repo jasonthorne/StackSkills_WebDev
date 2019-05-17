@@ -29,39 +29,6 @@ body{
 	width: 20%;
 }
 
-/*============================= */
-
-/* SPECIFICITY: */
-
-
-/*
-Different attribute types have different SPECIFICITY values. 
-These values determine precedence when attributes are targeted more than once.
-If values are equal, the LAST change is the one that takes precedence.
-Otherwise it is the change with the highest scoring value that takes precedence. 
-*/
-
-/*Elements (eg h1): each have a specificity value of 1.*/ 
-
-/*h1 here has 1 point (1 element)*/
-h1, h2, h3{ /*apply the styles below styles to ALL of these elements (elements of any type can be grouped)++++++++++++++++++++++++++++++++++++*/
-	color: #ffffff; /*font colour*/
-	text-shadow: 2px 2px 5px black; /*vertical axis, horizontal axis, blur radius, shadow colour*/
-	line-height: 1rem; /*relative to the font size of the root element +++++++++++++++++++++++++++++++++++++++++++++++*/
-	font-family: sans-serif;
-}
-
-/*1 point (1 element)*/
-h1{
-	color: green;
-}
-
-/*2 points (2 elements) 
-This takes precedence for all h1 tags WITH A DIV PARENT (at ANY level above it).
-For other h1 tags, the green change above takes precedence. */
-div h1{ 
-	color: blue;
-}
 
 
 
@@ -82,12 +49,59 @@ ul > li { /*targeting all li with a ul parent at a DIRECT level above it)*/
 }
 
 
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* SPECIFICITY: */
 
 
+/*
+Different selectors have different SPECIFICITY values. 
+These values determine precedence when attributes are targeted more than once.
+If values are equal, the LAST change is the one that takes precedence.
+Otherwise it is the change with the highest scoring value that takes precedence. 
+
++ Inline styles (<h1 style="color: #ffffff;">) - 1000pts each
++ IDs (#navbar) - 100pts each
++ Classes, attributes ([target=""]) & sudo-classes (a:hover) - 10pts each
++ Elements (p) & sudo-elements (p::first-line) - 1 pt each
+
+*/
+
+/*Elements (eg h1): each have a specificity value of 1.*/ 
+
+/*h1 here has 1 point (1 element)*/
+h1, h2, h3{ /*apply the styles below styles to ALL of these elements (elements of any type can be grouped)++++++++++++++++++++++++++++++++++++*/
+	color: #ffffff; /*font colour*/
+	text-shadow: 2px 2px 5px black; /*vertical axis, horizontal axis, blur radius, shadow colour*/
+	line-height: 1rem; /*relative to the font size of the root element +++++++++++++++++++++++++++++++++++++++++++++++*/
+	font-family: sans-serif;
+}
+
+/*1 point (1 element) This WOULD take precedence for h1
+As its the last selector of equal point value. IF below selectors didn't exist*/
+h1{
+	color: green;
+}
+
+/*2 points (2 elements)*/
+div h1{ 
+	color: blue;
+}
+
+/*11 points (1 class & 1 element)
+This takes precedence for all h1 tags WITH A 'CONTAINER' PARENT CLASS (at ANY level above it).
+For other h1 tags, the other colour changes above takes precedence.  */
+.container h1{
+	color: red;
+}
 
 
-
-
+/* !important will override EVERY OTHER h1 style attributes REGARDLESS of score*/
+/*
+h1{
+	color: green !important;
+}
+*/
 
 
 
