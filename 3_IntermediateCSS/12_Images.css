@@ -1,0 +1,27 @@
+
+
+body{
+	background-color: #444444;
+}
+
+/*==========================from this lesson:===========*/
+
+.borderImg{
+	border-radius: 50%; /*Rounds image corners. takes px or %. (50% gives perfect circle if image is perfect square)*/
+	height: 500px; /*takes px or %*/
+	width: 500px; /*takes px or %*/
+	border: 2px solid #dddddd; /*size, type, colour */
+	padding: 5px;/*space between border and img*/
+	
+}
+
+img{
+	max-width: 100%; /*tells image width to ALWAYS take up 100% of the element it's in (div tag in this case)*/
+	height: auto;
+	padding: 5px;
+	opacity: 0.95; /*range of between 0-1*/
+	display: block; /*creates a page wide margin (which allows for image to be aligned within it) */
+	margin: auto; /*evenly disperse the margin (created by 'display:block' above) around each side of the image */
+}
+
+/*=====================================================*/
