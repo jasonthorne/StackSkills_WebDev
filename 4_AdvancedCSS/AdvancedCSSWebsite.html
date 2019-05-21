@@ -4,29 +4,47 @@
 		<meta charset="UTF=8">
 		<title>Advanced CSS Website</title>
 		<link rel="stylesheet" href="AdvancedCSSWebsite.css">
-	</head>
-	<script type="text/javascript">
-		console.log("Yo");
-		/*
 		
-		link to unicodes:
-		https://unicode-table.com/en/
-		*/
-	</script>
+		<script type="text/javascript">
+			console.log("Yo");
+			/*
+			link to unicodes:
+			https://unicode-table.com/en/
+			
+			*/
+			function dropdownMenu(){
+				var target = document.getElementById("dropdownClick"); //store name of id in js var
+				/*menubar was clicked (due to calling of this function). 
+				Check if it's class name needs renamed to be "topNav responsive",
+				allowing for mobile styling of other list items:*/
+				if (target.className === "topNav"){ 
+					target.className += " responsive"; //rename class to "topNav responsive"
+				}else{
+					target.className = "topNav";l //reset topNav
+				}
+			}
+			
+		</script>
+	</head>
+	
     <body>
 		<!--website nav bar -->
 		<nav>
-			<ul class="topNav">
+			<ul class="topNav" id="dropdownClick">
 				<li><a href="#home">Home</a></li>
 				<li><a href="#news">News</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="#about">About</a></li>
 				<li class="topNav-right"><a href="#signUp">Sign Up</a></li>
 				<li class="topNav-right"><a href="#signIn">Sign In</a></li>
-				
-				<li class="dropdownIcon"><a href="">&#9776;</a></li><!--unicode characters act like text so are being styled by CSS -->
+				<!--Notes for li below: unicode characters act like text so are being styled by CSS. 
+				href="javascript:void(0);" ignores the link click by telling javascript that the path is undefined -->
+				<li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
 			</ul>
 		</nav>
+		
+		
+		
        
     </body>
 </html>

@@ -38,7 +38,6 @@ ul.topNav li{
 
 /*targeting the li with a class of "topNav-right" within the the ul with class="topNav"*/
 ul.topNav li.topNav-right{ 
-	/*list-style: none; /*remove bullet points from list*/
 	float: right; /*float elements to right*/
 }
 
@@ -70,11 +69,46 @@ ul.topNav li.dropdownIcon{
 /*
 + @media - tells the browser that we have a media query
 + screen - tells browser to detect the media screen on desktop, tablet & mobiles (to detect the screen widths).
-+ (max-width: 680px) - tell browser when to start making mobile styles
++ (max-width: 680px) - tell browser when to start making mobile styles (when width becomes less than 680px)
++ :not(:nth-child(1)) - a 'not selector'. targeting the 1st child element
 */
 @media screen and (max-width: 680px){
-	ul.topNav li 
+	
+	ul.topNav li:not(:nth-child(1)) { /*target all li children of 'ul.topNav', EXCEPT the 1st child (the 'Home' link) */
+		display: none; /*remove element from display*/
+	} 
+	
+	ul.topNav li.dropdownIcon{
+		display: block; /*display as a block element*/
+		float: right; /*was inheriting float left from "ul.topNav li" above*/
+	} 
+	
+	/*targeting the menubutton to stay in it's original position (not be changed like the other li below)*/
+	ul.topNav.responsive li.dropdownIcon{
+		position: absolute; 
+		top: 0; /*stay 0 from top*/
+		right: 0; /*stay 0 from right*/
+	}
+	
+	/*targeting the new nav ul classname (renamed after menubutton click event)*/
+	topNav.responsive{
+		position: relative;
+	}
+	
+	/*targeting the list items of new ul classname */
+	ul.topNav.responsive li{
+		display: inline;
+		float: none; /*override a previous float left (line 36)*/
+	}
+	
+	ul.topNav.responsive li a{
+		display: block;
+		text-align: left; /*override a previous text-align*/
+	}
 }
+
+
+
 
 
 
