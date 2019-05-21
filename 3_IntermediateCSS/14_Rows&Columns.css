@@ -48,6 +48,41 @@ button{
 	content: ""; /*clear content with an empty string*/
 }
 
+/*row ALWAYS takes up 100% of the viewport*/
+.col-1{ width: 8.33%;} /*100% of the viewport divided by 12 = 8.33*/
+.col-2{ width: 16.66%;}
+.col-3{ width: 25%;} /*this class takes up 25% of the viewport*/
+.col-4{ width: 33.33%;}
+.col-5{ width: 41.66%;}
+.col-6{ width: 50%;} /*this class takes up 50% of the viewport*/
+.col-7{ width: 58.33%;}
+.col-8{ width: 66.66%;}
+.col-9{ width: 75%;}  /*this class takes up 75% of the viewport*/
+.col-10{ width: 83.33%;}
+.col-11{ width: 91.66%;} 
+.col-12{ width: 100%;} /*this class takes up 100% of the viewport*/
+
+
+/*target ALL elements	 ++++++++++++++++++++++++++++++++++++++++++++++*/
+*{
+	
+	/*elements with padding and margins can display larger than they actually are
+	box-sizing property with this value takes any of the padding & margin and makes it part of the total
+	dimension of that element */
+  box-sizing: border-box;  /*If you set box-sizing: border-box; on an element padding and border are included in the width and height*/
+}
+
+
+/*ATTRIBUTE SELECTOR - targets all elements with a specified attribute*/
+[class*="col-"]{ /*target ALL classes that are equal to "col-"*/
+	border: 2px solid red;
+	padding: 15px;
+}
+
+
+
+
+
 
 
 /*=====================================================*/
