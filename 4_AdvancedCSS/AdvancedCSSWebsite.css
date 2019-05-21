@@ -58,6 +58,44 @@ ul.topNav li a:hover{
 	color: #ffffff;
 }
 
+/* hide the hamburger icon*/
+ul.topNav li.dropdownIcon{
+	display: none;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Mobile Styles*/
+
+/*
++ @media - tells the browser that we have a media query
++ screen - tells browser to detect the media screen on desktop, tablet & mobiles (to detect the screen widths).
++ (max-width: 680px) - tell browser when to start making mobile styles
+*/
+@media screen and (max-width: 680px){
+	ul.topNav li 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
