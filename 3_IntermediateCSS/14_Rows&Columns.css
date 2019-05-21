@@ -11,7 +11,8 @@ img{
 	padding: 5px;
 	opacity: 1; /*range of between 0-1*/
 	/*margin: 60px;/*Puts space around an element, pushing it away from other elements around it. Takes px or %. */
-	margin-bottom: 60px;
+	margin: auto;  /*horizontally center the element within its container. +++++++++++++++++++++++++*/
+	display: block; /*Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width  +++++++++++++++++++++++++*/
 }
 
 .borderImg{
@@ -77,6 +78,7 @@ button{
 [class*="col-"]{ /*target ALL classes that are equal to "col-"*/
 	border: 2px solid red;
 	padding: 15px;
+	float: left; /*stacks the columns from left to right*/
 }
 
 
