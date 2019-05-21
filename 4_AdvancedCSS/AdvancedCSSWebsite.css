@@ -1,1 +1,63 @@
 
+/*------------------------------------------------------------------------*/
+/*Defaults*/
+
+nav,header,footer{
+	display: block; /*give elements a display that takes up he whole width of the viewport */
+}
+
+body{
+	line-height: 1; /*space between text */
+	/*below gives everything in the body a margin of 0. (sucks everything edge-to-edge) 
+	If not given as 0, then browsers will add their own margin amounts */
+	margin: 0; 
+	
+}
+
+/*------------------------------------------------------------------------*/
+/*Nav bar*/
+
+nav{
+	width: 100%; /*always takes up 100% of the viewport width*/
+	margin: 0; 
+}
+
+/*targeting the nav's ul*/
+nav ul{ 
+	background-color: #eeeeee;
+	overflow: hidden; /*hide any elements too big for screen (eg dont create a scroll bar instead!)*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*targeting the li within the ul with class="topNav"*/
+ul.topNav li{ 
+	list-style: none; /*remove bullet points from list*/
+	float: left; /*float elements to left*/
+}
+
+/*targeting the li with a class of "topNav-right" within the the ul with class="topNav"*/
+ul.topNav li.topNav-right{ 
+	/*list-style: none; /*remove bullet points from list*/
+	float: right; /*float elements to right*/
+}
+
+/*li anchors*/
+ul.topNav li a{
+	display: block;
+	text-decoration: none; /*remove link underlines*/
+	min-height: 16px; /*give a minimum height to font (regardless of screen size)*/
+	padding: 14px;/*give padding to elements*/
+	text-transform: uppercase;
+	color: #666666;
+}
+
+/*targeting the anchor link's hover action*/
+ul.topNav li a:hover{
+	background-color: #0080ff;
+	color: #ffffff;
+}
+
+
+
+
