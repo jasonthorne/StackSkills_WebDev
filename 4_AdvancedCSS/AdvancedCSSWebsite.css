@@ -153,13 +153,29 @@ ul.topNav li.dropdownIcon{
 	background: linear-gradient(#076DFF, #65A5FF);
 }
 
+.leftSide-col{
+	margin-left: 30%;  /*given a % due to flex in .row*/
+}
+
 
 h1.large{
 	color: #ffffff;
 	font-size: 56px;
+	margin: 0;
+	line-height: 70px;
 }
 
+form h2{ /*target every h2 within a form tag */
+	color: #ffffff;
+}
 
+/*attribute selector */
+input[type="text"]{ /*all input tags where type="text" */
+	font-size: 20px;
+	width: 400px;
+	min-width: 100px; /*min width (regardless of viewport size)*/
+	padding: 5px; /*add space from within the element*/
+}
 
 
 
