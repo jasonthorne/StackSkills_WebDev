@@ -100,7 +100,45 @@ ul.topNav li.dropdownIcon{
 
 
 /*------------------------------------------------------------------------*/
-/*Mobile Styles*/
+/*Custom Styles*/
+
+
+#section1Gradient{
+	background-color: #076DFF; /* For browsers that do not support gradients */
+	background: linear-gradient(#076DFF, #65A5FF);
+}
+
+div.leftSide-col{
+	margin-left: 30%;  /*given a % due to flex in .row*/
+}
+
+div.rightSide-col{
+	margin-left: 15%;  /*given a % due to flex in .row*/
+}
+
+
+h1.large{
+	color: #ffffff;
+	font-size: 56px;
+	margin: 0;
+	line-height: 70px;
+}
+
+form h2{ /*target every h2 within a form tag */
+	color: #ffffff;
+}
+
+/*attribute selector */
+input[type="text"]{ /*all input tags where type="text" */
+	font-size: 20px;
+	width: 400px;
+	min-width: 100px; /*min width (regardless of viewport size)*/
+	padding: 5px; /*add space from within the element*/
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Mobile Styles - Declared last so as to not override any non mobile styling (that's being reassigned here)*/
 
 /*
 + @media - tells the browser that we have a media query
@@ -141,43 +179,20 @@ ul.topNav li.dropdownIcon{
 		display: block;
 		text-align: left; /*override a previous text-align*/
 	}
+	
+	.col-6{
+		width: 100%; /*override col-6 to take up 100% of the page*/
+		margin: 0;
+	}
+	
+	/*change the left & right column margins:*/
+	div.leftSide-col, 
+	div.rightSide-col{
+		margin: 15px; /*add 15px margin around the entire content of each col*/
+	}
+	
+	
 }
-
-
-/*------------------------------------------------------------------------*/
-/*Custom Styles*/
-
-
-#section1Gradient{
-	background-color: #076DFF; /* For browsers that do not support gradients */
-	background: linear-gradient(#076DFF, #65A5FF);
-}
-
-.leftSide-col{
-	margin-left: 30%;  /*given a % due to flex in .row*/
-}
-
-
-h1.large{
-	color: #ffffff;
-	font-size: 56px;
-	margin: 0;
-	line-height: 70px;
-}
-
-form h2{ /*target every h2 within a form tag */
-	color: #ffffff;
-}
-
-/*attribute selector */
-input[type="text"]{ /*all input tags where type="text" */
-	font-size: 20px;
-	width: 400px;
-	min-width: 100px; /*min width (regardless of viewport size)*/
-	padding: 5px; /*add space from within the element*/
-}
-
-
 
 
 

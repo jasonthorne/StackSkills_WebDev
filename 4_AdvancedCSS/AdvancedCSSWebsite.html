@@ -51,16 +51,15 @@
 		
 		<div class="container" id="section1Gradient">
 			<div class="row">
-				<!-- There are TWO classes in div below: 'col-6' & 'leftSide-col' -->
-				<div class="col-6 leftSide-col"><!-- this class takes up 50% of the view-port-->
-					<div>
+				<div class="col-6"><!-- this class takes up 50% of the view-port-->
+					<div class="leftSide-col">
 						<!--using H1 tags instead of <p> or labels etc, because headers have an added margin: -->
 						<h1 class="large">Header 1 Tag</h1>
 						<h1 class="large">Another one!</h1>
-					<div>
+					</div>
 					<!-- form for input -->
 					<form>
-						<div>
+						<div class="leftSide-col">
 							<h2>Username</h2>
 							<input class="inputbox" type="text" placeholder="Username" name="username">
 							<h2>Password</h2>
@@ -70,7 +69,12 @@
 					
 				</div>
 				<div class="col-6"><!-- this class takes up 50% of the view-port-->
-				
+					<div class="rightSide-col">
+						<!-- iframe taken from YouTube vid-->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/YCaGYUIfdy4" 
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+						picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
