@@ -109,11 +109,11 @@ ul.topNav li.dropdownIcon{
 }
 
 div.leftSide-col{
-	margin-left: 30%;  /*given a % due to flex in .row*/
+	margin-left: 15%;  /*given a % due to flex in .row*/
 }
 
 div.rightSide-col{
-	margin-left: 15%;  /*given a % due to flex in .row*/
+	margin-right: 15%;  /*given a % due to flex in .row*/
 }
 
 
@@ -134,6 +134,7 @@ input[type="text"]{ /*all input tags where type="text" */
 	width: 400px;
 	min-width: 100px; /*min width (regardless of viewport size)*/
 	padding: 5px; /*add space from within the element*/
+	border-radius: 7px /*round corners*/
 }
 
 
@@ -191,6 +192,17 @@ input[type="text"]{ /*all input tags where type="text" */
 		margin: 15px; /*add 15px margin around the entire content of each col*/
 	}
 	
+	input[type="text"]{
+		/*width: 350px;*/
+	}
+	
+	/*resize the video to 100% of page*/
+	.videoContainer iframe{
+		position: relative;
+		width: 100%;
+		margin: 0;
+		overflow: hidden; /*remove any overflow*/
+	}
 	
 }
 
