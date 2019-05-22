@@ -14,6 +14,42 @@ body{
 	
 }
 
+.container{
+	width:100%;
+	margin: auto; /*center the container around the margins*/
+	padding-top: 4%; /*padding extends the element (from its center)*/
+	padding-bottom: 4%;
+}
+
+/*----rows & columns:----*/
+
+.row{
+	width: 100%; /*give width of full viewport */
+	display: flex; /*grabs any elements in the row that have flex added to them, and helps them change size +++++++++++++*/
+	flex-wrap: wrap; /*'wrap' the contents of the row as it flexes*/
+	align-items: center; /*center the contents within the flex container (as they wrap during flexing)*/
+}
+
+/*insert directly after each row class */
+.row::after{ 
+	display: table; /*Let the element behave like a <table> element*/
+	clear: both; /*don't allow floating elements to either side of the element*/
+	content ""; /*clear out any previous content (start afresh)*/
+}
+
+.col-1{ width: 8.33%;} /*100% of the viewport divided by 12 = 8.33*/
+.col-2{ width: 16.66%;}
+.col-3{ width: 25%;} /*this class takes up 25% of the viewport*/
+.col-4{ width: 33.33%;}
+.col-5{ width: 41.66%;}
+.col-6{ width: 50%;} /*this class takes up 50% of the viewport*/
+.col-7{ width: 58.33%;}
+.col-8{ width: 66.66%;}
+.col-9{ width: 75%;}  /*this class takes up 75% of the viewport*/
+.col-10{ width: 83.33%;}
+.col-11{ width: 91.66%;} 
+.col-12{ width: 100%;} /*this class takes up 100% of the viewport*/
+
 /*------------------------------------------------------------------------*/
 /*Nav bar*/
 
@@ -108,14 +144,20 @@ ul.topNav li.dropdownIcon{
 }
 
 
+/*------------------------------------------------------------------------*/
+/*Custom Styles*/
 
 
+#section1Gradient{
+	background-color: #076DFF; /* For browsers that do not support gradients */
+	background: linear-gradient(#076DFF, #65A5FF);
+}
 
 
-
-
-
-
+h1.large{
+	color: #ffffff;
+	font-size: 56px;
+}
 
 
 
