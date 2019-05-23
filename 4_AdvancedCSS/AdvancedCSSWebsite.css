@@ -61,6 +61,15 @@ p{
 .col-11{ width: 91.66%;} 
 .col-12{ width: 100%;} /*this class takes up 100% of the viewport*/
 
+/*target EVERY element on the page*/
+*{
+	/*makes the padding and margins of an element count towards its allocated size  +++++++++++++++++++++++++++++
+	 eg: a 500 x 500px pic with an added border of 5 px still has a width of 500px
+	 w3c quote: Include padding and border in the element's total width and height.
+	 */
+	box-sizing: border-box; 
+}
+
 /*------------------------------------------------------------------------*/
 /*Nav bar*/
 
@@ -124,15 +133,34 @@ div.box{
 	/* horiz length, vert length, blur radius, spread radius, (red, green, blue, opacity). NOTE: TWO box-shadows have been created below! */
 	box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1); /*link to box-shadow generator https://www.cssmatic.com/box-shadow */
 	text-align: center;
+	margin: 24px;
+	padding: 36px 24px 40px 24px; /*top, right, bottom, left */
+	border-radius: 7px;
 }
 
 div.icon{
 	width: 100%; /* allows image to flex with screen size */
 }
 
+button{
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffffff;
+	background-color: #0069ff;
+	padding: 15px 60px; /* top: 15px , right: 60px, bottom: 15px (goes back to 1st value, as no more given), left: 60px (goes to 2nd value as it did for right pos)*/
+	display: block;
+	text-align: center;
+	margin: 5px;
+	border-radius: 7px;
+}
+
+button.myButton{
+	display: block;
+	margin: auto;
+}
 
 div.leftSide-col{
-	 margin-left: 30%; /*given a % due to flex in .row*/
+	 margin-left: 15%; /*30%*/ /*given a % due to flex in .row*/
 }
 
 div.rightSide-col{
@@ -209,9 +237,19 @@ input[type="text"]{ /*all input tags where type="text" */
 		text-align: left; /*override a previous text-align*/
 	}
 	
-	.col-6{
-		width: 100%; /*override col-6 to take up 100% of the page*/
+	h1.section2Header{
+		font-size: 50px;
+	}
+	
+	.col-6, 
+	.col-4{
+		width: 100%; /*override colums to take up 100% of the page when in mobile state +++++++++++++++++++++*/
 		margin: 0;
+	}
+	
+	div.box{
+		padding: 5px; 
+		display: block;
 	}
 	
 	/*change the left & right column margins:*/
