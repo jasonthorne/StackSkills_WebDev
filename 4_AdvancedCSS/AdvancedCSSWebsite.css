@@ -108,12 +108,16 @@ ul.topNav li.dropdownIcon{
 	background: linear-gradient(#076DFF, #65A5FF);
 }
 
+div.box{
+	background-color: #ffffff;
+}
+
 div.leftSide-col{
-	margin-left: 15%;  /*given a % due to flex in .row*/
+	 margin-left: 30%; /*given a % due to flex in .row*/
 }
 
 div.rightSide-col{
-	margin-right: 15%;  /*given a % due to flex in .row*/
+	margin-right: 15%; /* given a % due to flex in .row*/
 }
 
 
@@ -122,6 +126,11 @@ h1.large{
 	font-size: 56px;
 	margin: 0;
 	line-height: 70px;
+}
+
+h1.section2Header{
+	font-size: 50px; 
+	text-align: center; /* the header element this is inside acts like a block element, so text can be center aligned */
 }
 
 form h2{ /*target every h2 within a form tag */
