@@ -14,6 +14,17 @@ body{
 	
 }
 
+label{
+	font-size: 35px;
+	font-weight: 600; /*add a numeric weight to the font (regular 'bold' is ~300) */
+}
+
+
+p{
+	font-size: 25px;
+	line-height: 1;
+}
+
 .container{
 	width:100%;
 	margin: auto; /*center the container around the margins*/
@@ -110,7 +121,15 @@ ul.topNav li.dropdownIcon{
 
 div.box{
 	background-color: #ffffff;
+	/* horiz length, vert length, blur radius, spread radius, (red, green, blue, opacity). NOTE: TWO box-shadows have been created below! */
+	box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1); /*link to box-shadow generator https://www.cssmatic.com/box-shadow */
+	text-align: center;
 }
+
+div.icon{
+	width: 100%; /* allows image to flex with screen size */
+}
+
 
 div.leftSide-col{
 	 margin-left: 30%; /*given a % due to flex in .row*/
