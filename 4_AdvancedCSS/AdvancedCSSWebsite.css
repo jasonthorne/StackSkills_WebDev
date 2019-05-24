@@ -206,6 +206,28 @@ input[type="text"]{ /*all input tags where type="text" */
 }
 
 
+footer.myFooter{
+	background-color: #666666;
+	padding-left: 10%;
+}
+
+footer.myFooter h1{
+	color: #ffffff;
+	font-size: 35px;
+}
+
+footer.myFooter ul{
+	list-style: none;
+	text-align: left;
+	padding-left: 0; /*remove the left padding added by default to list items*/
+}
+
+footer.myFooter li{
+	color: #ffffff;
+	font-size: 22px;
+	line-height: 1.5;
+}
+
 /*------------------------------------------------------------------------*/
 /*Mobile Styles - Declared last so as to not override any non mobile styling (that's being reassigned here)*/
 
@@ -263,6 +285,12 @@ input[type="text"]{ /*all input tags where type="text" */
 	.col-5{
 		width: 100%; /*override columns to take up 100% of the page when in mobile state +++++++++++++++++++++*/
 		margin: 0;
+	}
+	
+	div.mobileCol-3{
+		width: 50%; /*let each column take up 50% of the view-port, giving it 2 columns on each row */
+		display: block;
+		
 	}
 	
 	div.box{
