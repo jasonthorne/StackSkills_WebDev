@@ -25,6 +25,11 @@ p{
 	line-height: 1;
 }
 
+article p{
+	font-size: 30px;
+	padding: 20px;  /*padding doesnt force space like margin does */
+}
+
 .container{
 	width:100%;
 	margin: auto; /*center the container around the margins*/
@@ -131,7 +136,7 @@ ul.topNav li.dropdownIcon{
 div.box{
 	background-color: #ffffff;
 	/* horiz length, vert length, blur radius, spread radius, (red, green, blue, opacity). NOTE: TWO box-shadows have been created below! */
-	box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1); /*link to box-shadow generator https://www.cssmatic.com/box-shadow */
+	box-shadow: 0 0 0 1px rgba(0/*shadow*/,0/*background*/,0/*box colour*/,.15/*opacity*/), 0 2px 3px 0 rgba(0,0,0,.1); /*link to box-shadow generator https://www.cssmatic.com/box-shadow */
 	text-align: center;
 	margin: 24px;
 	padding: 36px 24px 40px 24px; /*top, right, bottom, left */
@@ -140,6 +145,13 @@ div.box{
 
 div.icon{
 	width: 100%; /* allows image to flex with screen size */
+}
+
+div.laptopIcon img{
+	display: block;
+	margin: auto;
+	/* horiz length, vert length, blur radius, spread radius, (red, green, blue, opacity).*/
+	box-shadow: -2px -2px 20px 2px rgba(0/*shadow*/,0/*background*/,0 /*box colour*/,.15/*opacity*/), 2px 2px 15px 2px rgba(0,0,0,1); 
 }
 
 button{
@@ -241,9 +253,15 @@ input[type="text"]{ /*all input tags where type="text" */
 		font-size: 50px;
 	}
 	
+	article p{
+		font-size: 25px;
+	}
+	
 	.col-6, 
-	.col-4{
-		width: 100%; /*override colums to take up 100% of the page when in mobile state +++++++++++++++++++++*/
+	.col-4,
+	.col-7,
+	.col-5{
+		width: 100%; /*override columns to take up 100% of the page when in mobile state +++++++++++++++++++++*/
 		margin: 0;
 	}
 	
