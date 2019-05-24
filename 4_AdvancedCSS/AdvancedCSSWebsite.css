@@ -270,6 +270,15 @@ input[type="text"]{ /*all input tags where type="text" */
 		display: block;
 	}
 	
+	div.laptopIcon{
+		margin: 15px; /*add a margin to the image's div, to give spacing to the image inside*/
+	}
+	
+	div.laptopIcon img{
+		width: 100%; /*give the image 100% of the div size*/
+		
+	}
+	
 	/*change the left & right column margins:*/
 	div.leftSide-col, 
 	div.rightSide-col{
