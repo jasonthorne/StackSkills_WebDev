@@ -14,3 +14,8 @@
     background-color: #ff9232;
     height: 4.7rem;
 }
+
+/*attribute selector*/
+[class*="col-"] { /* ALL (*) elements that are equal to "col-" */
+    background-color: #00c3aa;
+}
