@@ -1,0 +1,16 @@
+/*regular container */
+.container{
+    background-color: #6c2eb9;
+    height: 5rem;
+}
+
+/*fluid container */
+.container-fluid{
+    background-color: #6c2eb9;
+    height: 5rem;
+}
+
+.row{
+    background-color: #ff9232;
+    height: 4.7rem;
+}
