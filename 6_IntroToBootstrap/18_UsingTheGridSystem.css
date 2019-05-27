@@ -19,5 +19,5 @@
 [class*="col-"] { /* ALL (*) attributes that are equal to "col-" */
     background-color: #00c3aa;
     height: 4.2rem;
-    border: 2px solid rgba(0,0,0,0.3); /*border of 2px thats solid and adding a transpart color to it.
+    border: 2px solid rgba(0,0,0,0.3); /*border of 2px thats solid and adding a transpart color to it.*/
 }

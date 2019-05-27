@@ -24,7 +24,7 @@
     <div class="container-fluid">
         <div class="row"> <!--A colum is the ONLY immediate child element allowed for a row (for proper grid flexing)-->
           <div class="col-sm-6"> <!--a small screen sized colum, with a width of 6 (half the page). There's an extra small setting that auto kicks in when at mobile size, and sets the the column to 12 (taking up the full page) ++++++++++-->
-            <!-- <div class="col-sm-6"> ALWAYS GIVES A WIDTH OF 6 (half a page) regardless of screen size, because no specified size is given ++++++++++++++++++++-->
+            <!-- <div class="col-sm-6"> ALWAYS GIVES A WIDTH OF 6 (half a page) regardless of screen size, because no specified size is given. BETTER to use specific sizes though++++++++++++++++++++-->
             Col 1
           </div>
           <div class="col-sm-6"> <!--columns auto stack when the screen is at mobile size. +++++++++++++-->
@@ -37,9 +37,23 @@
           <div class="col-sm-6 col-lg-4">Col 4</div>
           <div class="col-sm-12 col-lg-4">Col 5</div>
         </div>
+
+        <!-- row within a row:
+        <div class="row"> 
+          <div class="col-6">
+           <div class="row">
+            <div class="col-6"></div>
+           </div>
+          </div>
+          <div class="col-6"> 
+           yo
+          </div>
+        </div>
+      -->
+      
     </div>
 
-    <!--COLUMN SIZES: -sm-, -md-, -lg- -xl- --->
+    <!--COLUMN SIZES: -sm-, -md-, -lg- -xl- -->
 
 
 
