@@ -1,0 +1,15 @@
+body.signin-body{
+    background-color: #e6f2ff;
+}
+
+.signin-container{
+    margin-top: 8%; /* % is best for flexing elements*/
+}
+
+.signin-card{
+    padding: 40px 0px 20px; /* top and left: 40px, right:0, bottom: 20px */
+    background-color: #f4f4f4;
+    box-shadow: 2px /*vert (down)*/ 2px /*horiz (right)*/ 5px /*blur radius*/ rgba(0/*red*/, 0/*green*/, 0 /*blue*/, .5 /*opacity*/);  
+    -webkit-box-shadow: 2px 2px  5px rgba(0, 0, 0, .5); /* directly targeting the browser rendering engine for safari: https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css+++++++++++++++++++++++++++++++++*/
+    -moz-box-shadow: 2px 2px  5px rgba(0, 0, 0, .5); /* directly targeting the browser rendering engine for firefox +++++++++++++++++++++++++++++++++*/
+}

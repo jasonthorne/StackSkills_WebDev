@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- reference to the viewport +++++++++++++++++++++++++++-->.
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- reference to the viewport +++++++++++++++++++++++++++-->
 
     <!-- CSS links (LOADED IN ORDER - allowing our own personal css at bottom to overwrite anything previously styled beforee it) +++++++++++++++++++++++++++++++++-->
     <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" > <!-- Stylesheet for grid system (styling for rows & columns) .min is minified version (compressed, giving faster load time) ++++++++++++++-->
@@ -12,19 +12,22 @@
 
     <title>Bootstrap Login Portal</title>
   </head>
-  <body>
+  <body class="signin-body">
     
     <!-- EVERYTHING in bootstrap MUST be wrapped in a container (for it's special sexiness to work) -->
-    <div class="container"> <!--using REGULAR (not fluid) container inorder to center content (as is centered)-->
+    <div class="container signin-container"> <!--using REGULAR (not fluid) container inorder to center content (as is centered) NOTE: two class names added here-->
       <div class="row"> <!--ALL content HAS to live in colums, and columns can NOLY be an immediate child of a row-->
-        <div class="col">a</div><!--this col wiil take an even ammount of width left over from the colum below (on the LEFT side of the viewport) as/when the viewport changes-->
-        <div class="col-8">b</div><!--this col is 8 spaces wide (in the CENTER of the viewport)-->
-        <div class="col">c</div><!--this col wiil take an even ammount of width left over from the colum above (on the RIGHT side of the viewport) as/when the viewport changes -->
+        <div class="col"></div><!--this col wiil take an even ammount of width left over from the colum below (on the LEFT side of the viewport) as/when the viewport changes-->
+        <div class="col-8"><!--this col is 8 spaces wide (aligned in the CENTER of the viewport - due to regular container being used)-->
+          <div class="card signin-card"> <!-- taken from Bootstrap site: https://getbootstrap.com/docs/4.3/components/card/ -->
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+          </div>
+        </div>
+        <div class="col"></div><!--this col wiil take an even ammount of width left over from the colum above (on the RIGHT side of the viewport) as/when the viewport changes -->
       </div>
     </div>
-
-
-
 
 
     <!-- Optional JavaScript -->
