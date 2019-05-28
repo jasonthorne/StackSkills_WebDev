@@ -19,7 +19,7 @@ img.signin-img{ /*grabbing the class by it's ELEMENT (img) ++++++++++++++++++ */
     padding: 0 2rem 2rem; /* 0 on top, 2 right & left, 2 bottom. rem =  ammount of times the size of the ROOT FONT (2rem = 2x the size of the root font)*/
     margin: auto; /* does the centering by giving an equal ammount of margin to all sides*/
     display: block; /* does the centering by giving the element the entire width of it's container*/
-    width: 70%; /*be 70% of actual size (at whatever scale its at inrelation to viewport size)*/
+    width: 60%; /*be 60% of actual size (at whatever scale its at inrelation to viewport size)*/
 }
 
 form.signin-form{
@@ -27,3 +27,24 @@ form.signin-form{
     margin: auto; /*center the form*/
     display: block; /*center the form*/
 }
+
+button.signin-btn{
+    color: #ffffff;
+    background-color: #d64829;
+    width: 100%; /*take up 100% width of the element it lives in (the form)*/
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
