@@ -1,0 +1,22 @@
+body.signin-body{
+    background-color: #e6f2ff;
+}
+
+.container.signin-container{ /* referencing BOTH classnames in the reference chain ++++++++++++++*/
+    margin-top: 8%; /* % is best for flexing elements*/
+}
+
+.card.signin-card{
+    padding: 40px 0px 20px; /* 40 on top, 0 right & left, 20 bottom. */
+    background-color: #f4f4f4;
+    box-shadow: 2px /*vert (down)*/ 2px /*horiz (right)*/ 5px /*blur radius*/ rgba(0/*red*/, 0/*green*/, 0 /*blue*/, .5 /*opacity*/);  
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5); /* directly targeting the browser rendering engine for safari: https://stackoverflow.com/questions/3468154/what-is-webkit-and-how-is-it-related-to-css+++++++++++++++++++++++++++++++++*/
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5); /* directly targeting the browser rendering engine for firefox +++++++++++++++++++++++++++++++++*/
+}
+
+/*The following ensures that the image is centered: +++++++++++++++++++++++++++++++++++++++++++++++ */
+img.signin-img{ /*grabbing the class by it's ELEMENT (img) ++++++++++++++++++ */
+    padding: 0 2rem 2rem; /* 0 on top, 2 right & left, 2 bottom. rem =  ammount of times the size of the ROOT FONT (2rem = 2x the size of the root font)*/
+    margin: auto; /* does the centering by giving an equal ammount of margin to all sides*/
+    display: block; /* does the centering by giving the element the entire width of it's container*/
+}
