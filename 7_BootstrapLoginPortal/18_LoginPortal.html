@@ -8,12 +8,20 @@
     <!-- CSS links (LOADED IN ORDER - allowing our own personal css at bottom to overwrite anything previously styled beforee it) +++++++++++++++++++++++++++++++++-->
     <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" > <!-- Stylesheet for grid system (styling for rows & columns) .min is minified version (compressed, giving faster load time) ++++++++++++++-->
     <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" > <!-- Stylesheet for styling elements ++++++++++++++-->
-    <link rel="stylesheet" href="style.css" > <!--our own style sheet-->
+    <link rel="stylesheet" href="18_LoginPortal.css" > <!--our own style sheet-->
 
-    <title>Hello, world!</title>
+    <title>Bootstrap Login Portal</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+    <!-- EVERYTHING in bootstrap MUST be wrapped in a container (for it's special sexiness to work) -->
+    <div class="container"> <!--using REGULAR (not fluid) container inorder to center content (as is centered)-->
+      <div class="row"> <!--ALL content HAS to live in colums, and columns can NOLY be an immediate child of a row-->
+        <div class="col">a</div><!--this col wiil take an even ammount of width left over from the colum below (on the LEFT side of the viewport) as/when the viewport changes-->
+        <div class="col-8">b</div><!--this col is 8 spaces wide (in the CENTER of the viewport)-->
+        <div class="col">c</div><!--this col wiil take an even ammount of width left over from the colum above (on the RIGHT side of the viewport) as/when the viewport changes -->
+      </div>
+    </div>
 
 
 
