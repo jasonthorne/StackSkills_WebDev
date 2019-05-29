@@ -18,7 +18,7 @@
     <div class="container signin-container"> <!--using REGULAR (not fluid) container inorder to center content (as is centered) NOTE: two class names added here-->
       <div class="row"> <!--ALL content HAS to live in colums, and columns can NOLY be an immediate child of a row-->
         <div class="col"></div><!--this col wiil take an even ammount of width left over from the colum below (on the LEFT side of the viewport) as/when the viewport changes-->
-        <div class="col-8"><!--this col is 8 spaces wide (aligned in the CENTER of the viewport - due to regular container being used)-->
+        <div class="col-sm-12 col-md-8"><!--this col is 8 spaces wide (aligned in the CENTER of the viewport - due to regular container being used) for all colums where viewport is MEDIUM OR LARGER (-md-). AND 12 colums for small viewport -->
           <div class="card signin-card"> <!-- taken from Bootstrap site: https://getbootstrap.com/docs/4.3/components/card/ -->
             <div class="card-body">
               <img src="../img/profilePic.png" class="img-fluid signin-img"> <!-- Bootstrap image class, allowing for responsive images-->

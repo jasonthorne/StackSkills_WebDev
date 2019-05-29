@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- reference to the viewport +++++++++++++++++++++++++++-->.
+
+    <!-- CSS links (LOADED IN ORDER - allowing our own personal css at bottom to overwrite anything previously styled beforee it) +++++++++++++++++++++++++++++++++-->
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" > <!-- Stylesheet for grid system (styling for rows & columns) .min is minified version (compressed, giving faster load time) ++++++++++++++-->
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" > <!-- Stylesheet for styling elements ++++++++++++++-->
+    <link rel="stylesheet" href="20_BootstrapWebsite.css" > <!--our own style sheet-->
+
+    <title>Bootstrap Website</title>
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Taken from bootstrap site (with altered class colour scheme): https://getbootstrap.com/docs/4.3/components/navbar/-->
+          <a class="navbar-brand" href="#">Website</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><!--dropdown menu-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a><!--class="sr-only" turns link into text for screen readers -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> <!--js file imported from bootstrap folder (WAS PREVIOUSLY USING A REFERENCE LINK) ++++++++++++++++++++++-->
+  </body>
+</html>
