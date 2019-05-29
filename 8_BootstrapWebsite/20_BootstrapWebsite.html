@@ -13,7 +13,7 @@
     <title>Bootstrap Website</title>
   </head>
   <body>
-
+    <div class="container-fluid"><!-- REMEMBER: Everything in Botostrap NEEDS wrapped in a container! 'fluid' container expands the width of the browser-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Taken from bootstrap site (with altered class colour scheme): https://getbootstrap.com/docs/4.3/components/navbar/-->
           <a class="navbar-brand" href="#">Website</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><!--dropdown menu-->
@@ -42,8 +42,30 @@
               </li>
             </ul>
           </div>
-        </nav>
-    
+      </nav>
+
+      <div class="sectionLight"><!--hero section-->
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Hello world!</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-sm-12 col-md-6"> <!--on a md size this will take up 6, and the cols to each side will take the rest. on a sm size, this will take up the WHOLE width, and the columns to either side will completely colapse +++++++++++++++++++++++-->
+
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
