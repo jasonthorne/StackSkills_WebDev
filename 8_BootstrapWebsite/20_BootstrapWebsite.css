@@ -1,4 +1,12 @@
+
+/*class for main text of hero section */
 .jumbotron{
     text-align: center;
     background: none; /* remove the background colour, by wiping the background*/
+}
+
+/*class for hero section */
+.sectionLight{
+    background-color: #eceeef;
+    padding: 2em;
 }
