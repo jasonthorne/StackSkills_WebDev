@@ -32,10 +32,15 @@ button.signin-btn{
     color: #ffffff;
     background-color: #d64829;
     width: 100%; /*take up 100% width of the element it lives in (the form)*/
-    
+    margin-bottom: 1.2rem; /*push some space from the bottom of the button (for check box)*/
 }
 
-
+a.create-new-account{
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}
 
 
 
