@@ -31,3 +31,6 @@ button.myButton{
     margin: auto;
 }
 
+.removePadding{
+    padding: 0;
+}
