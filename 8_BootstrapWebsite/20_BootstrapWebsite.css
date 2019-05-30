@@ -8,5 +8,14 @@
 /*class for hero section */
 .sectionLight{
     background-color: #eceeef;
-    padding: 2em;
+    padding: 2rem;
+}
+
+.sectionDark{
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.myImg1{
+    border-radius: 55px;
 }
