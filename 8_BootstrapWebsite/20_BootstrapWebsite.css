@@ -35,11 +35,12 @@ button.myButton{
     padding: 0;
 }
 
+/*
 h5.modal-title{ /*center the modal title*/
     /*display: block;*/
-    /*margin: auto; +++++++++++++++++++++++++*/ 
+    /*margin: auto; +++++++++++++++++++++++++
 }
-
+*/
 
 .modalFormWrapper{
    margin-top: 1.2rem;
@@ -58,3 +59,6 @@ h5.modal-title{ /*center the modal title*/
     width: 48%;
 }
 
+.footerImg{
+    padding: 15px;
+}
