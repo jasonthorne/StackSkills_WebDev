@@ -142,7 +142,7 @@
             <div class="col-sm-12">
               <!-- Button trigger modal from: https://getbootstrap.com/docs/4.3/components/modal/-->
               <div class="myButtonWrapper">
-                <button type="button" class="btn btn-lg myButton" data-toggle="modal" data-target="#myModal">Button</button><!--'data-toggle' MUST equal the id of the modal to trigger it-->
+                <button type="button" class="btn btn-lg myButton" data-toggle="modal" data-target="#myModal1">Laboris Nisi Ut</button><!--'data-toggle' MUST equal the id of the modal to trigger it-->
               </div>
             </div>
         </div><!--"row"-->
@@ -154,28 +154,28 @@
             <div class="row">
 
               <div class="col-sm-12 col-lg-4"> <!--col takes up 12 (full width) when small, 4 when lrg (3 cols with width of 4 each = 12 = 3 cols on page when screen is lrg) +++++++++++++++++++++++++++++++++-->
-                <img class="img-fluid imgCenter" src="https://picsum.photos/300/325?random=5">
+                <img class="img-fluid imgCenter" src="https://picsum.photos/280/280?random=5">
                 <div class="row"><!-- row for holding button-->
                   <div class="col-sm-12"><!-- col for holding button as COLUMN CAN ONLY BE THE IMMEDIATE CHILD OF A ROW!!! +++++++++++++++++-->
-                      <button type="button" class="btn btn-lg btnCenter btn-danger">Lorem Ipsum</button>
+                      <button type="button" class="btn btn-lg btnCenter btn-danger" data-toggle="modal" data-target=".myModal2ClassID-modal-lg">Lorem Ipsum</button><!--addded 'data-toggle=""' & data-target=""" . Adding a CLASS as the data target (instead of just an id)  +++++++++++++-->
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-12 col-lg-4"> <!--col takes up 12 (full width) when small, 4 when lrg (3 cols with width of 4 each = 12 = 3 cols on page when screen is lrg) +++++++++++++++++++++++++++++++++-->
-                <img class="img-fluid imgCenter" src="https://picsum.photos/300/325?random=6">
-                <div class="row"><!-- row for holding button-->
-                  <div class="col-sm-12"><!-- col for holding button as COLUMN CAN ONLY BE THE IMMEDIATE CHILD OF A ROW!!! +++++++++++++++++-->
-                      <button type="button" class="btn btn-lg btnCenter btn-danger">Dolor Sit</button>
+              <div class="col-sm-12 col-lg-4">
+                <img class="img-fluid imgCenter" src="https://picsum.photos/280/280?random=6">
+                <div class="row">
+                  <div class="col-sm-12">
+                      <button type="button" class="btn btn-lg btnCenter btn-danger" data-toggle="modal" data-target=".myModal3ClassID-modal-md">Dolor Sit</button>
                   </div>
                 </div>
               </div>
 
-              <div class="col-sm-12 col-lg-4"> <!--col takes up 12 (full width) when small, 4 when lrg (3 cols with width of 4 each = 12 = 3 cols on page when screen is lrg) +++++++++++++++++++++++++++++++++-->
-                <img class="img-fluid imgCenter" src="https://picsum.photos/300/325?random=7">
-                <div class="row"><!-- row for holding button-->
-                  <div class="col-sm-12"><!-- col for holding button as COLUMN CAN ONLY BE THE IMMEDIATE CHILD OF A ROW!!! +++++++++++++++++-->
-                      <button type="button" class="btn btn-lg btnCenter btn-danger">Ad Minim</button>
+              <div class="col-sm-12 col-lg-4"> 
+                <img class="img-fluid imgCenter" src="https://picsum.photos/280/280?random=7">
+                <div class="row">
+                  <div class="col-sm-12">
+                      <button type="button" class="btn btn-lg btnCenter btn-danger" data-toggle="modal" data-target=".myModal4ClassID-modal-sm">Ad Minim</button>
                   </div>
                 </div>
               </div>
@@ -186,8 +186,9 @@
       </div>
 
 
-      <!-- MODAL ===========================================================================-->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <!-- MODALS ===========================================================================-->
+      <!--modal1-->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -228,7 +229,46 @@
               </div>
             </div>
           </div>
+        </div><!--modal1-->
+
+        <!---------------------------------------------------------------------->
+        <!--modal2-->
+        <div class="modal fade myModal2ClassID-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!--added out own class as an ID for the button (-modal-lg is NEEDED as it tells bootstrap that were using a large modal) +++++++++++-->
+            <div class="modal-dialog modal-lg"> <!--IMPORTANT: The class size in this wrapper class MUST relate to the class size given in the modal div above +++++++++++++++-->
+              <div class="modal-content">
+                <div class="embed-responsive embed-responsive-16by9"> <!--aspect ration taken from here (16x9 is the standard): https://stackskills.com/courses/228011/lectures/3556289-->
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe><!-- EMBED is needed in link! -->
+                </div>
+                <p>Large size</p>
+              </div>
+            </div>
+          </div>
+
+        <!---------------------------------------------------------------------->
+        <!--modal3-->
+        <div class="modal fade myModal3ClassID-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <!-- md size-->
+          <div class="modal-dialog modal-md"> <!-- md size-->
+            <div class="modal-content">
+              <div class="embed-responsive embed-responsive-16by9"> 
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+              </div>
+              <p>Med size</p>
+            </div>
+          </div>
         </div>
+
+         <!---------------------------------------------------------------------->
+        <!--modal4-->
+        <div class="modal fade myModal4ClassID-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">  <!-- sm size-->
+            <div class="modal-dialog modal-sm"> <!-- sm size-->
+              <div class="modal-content">
+                <div class="embed-responsive embed-responsive-16by9"> 
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                </div>
+                <p>Small size</p>
+              </div>
+            </div>
+          </div>
 
     </div><!--"container-fluid" -->
 
