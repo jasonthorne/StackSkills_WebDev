@@ -34,3 +34,26 @@ button.myButton{
 .removePadding{
     padding: 0;
 }
+
+h5.modal-title{ /*center the modal title*/
+    /*display: block;*/
+    /*margin: auto; +++++++++++++++++++++++++*/ 
+}
+
+
+.modalFormWrapper{
+   margin-top: 1.2rem;
+}
+
+.imgCenter{ /*center the image*/
+    display: block;
+    margin: auto;
+}
+
+.btnCenter{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 52%;
+}

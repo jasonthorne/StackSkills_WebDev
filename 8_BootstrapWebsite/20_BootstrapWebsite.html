@@ -148,24 +148,83 @@
         </div><!--"row"-->
       </div><!--"sectionDark"-->
 
+      <div class="sectionLight">
+        <div class="row">
+          <div class="col-sm-12"> 
+            <div class="row">
+
+              <div class="col-sm-12 col-lg-4"> <!--col takes up 12 (full width) when small, 4 when lrg (3 cols with width of 4 each = 12 = 3 cols on page when screen is lrg) +++++++++++++++++++++++++++++++++-->
+                <img class="img-fluid imgCenter" src="https://picsum.photos/300/325?random=5">
+                <div class="row"><!-- row for holding button-->
+                  <div class="col-sm-12"><!-- col for holding button as COLUMN CAN ONLY BE THE IMMEDIATE CHILD OF A ROW!!! +++++++++++++++++-->
+                      <button type="button" class="btn btn-lg btnCenter btn-danger">Lorem Ipsum</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-4"> <!--col takes up 12 (full width) when small, 4 when lrg (3 cols with width of 4 each = 12 = 3 cols on page when screen is lrg) +++++++++++++++++++++++++++++++++-->
+                <img class="img-fluid imgCenter" src="https://picsum.photos/300/325?random=6">
+                <div class="row"><!-- row for holding button-->
+                  <div class="col-sm-12"><!-- col for holding button as COLUMN CAN ONLY BE THE IMMEDIATE CHILD OF A ROW!!! +++++++++++++++++-->
+                      <button type="button" class="btn btn-lg btnCenter btn-danger">Dolor Sit</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-4"> <!--col takes up 12 (full width) when small, 4 when lrg (3 cols with width of 4 each = 12 = 3 cols on page when screen is lrg) +++++++++++++++++++++++++++++++++-->
+                <img class="img-fluid imgCenter" src="https://picsum.photos/300/325?random=7">
+                <div class="row"><!-- row for holding button-->
+                  <div class="col-sm-12"><!-- col for holding button as COLUMN CAN ONLY BE THE IMMEDIATE CHILD OF A ROW!!! +++++++++++++++++-->
+                      <button type="button" class="btn btn-lg btnCenter btn-danger">Ad Minim</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-      <!-- MODAL ===========================================================================-->-->
+      <!-- MODAL ===========================================================================-->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                  <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5><!--modal title-->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close"> <!--x close btn-->
+                    <span aria-hidden="true">&times;</span> 
+                  </button>
               </div>
               <div class="modal-body">
-                ...
+
+                  <div class="container-fluid"><!--add a container to the modal body (for adding a grid system with rows & cols)-->
+                  <div class="row"> <!--row for modal image-->
+                    <div class="col-sm-12"><!-- every small & ABOVE will take up 12 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+                      <img class="img-fluid" src="https://picsum.photos/450/250?random=8">
+                    </div>
+                  </div>
+                  <div class="row"> <!--row for modal form-->
+                    <div class="col-sm-12">
+                        <div class="modalFormWrapper"><!--for adding padding to, to add space around the form-->
+                          <form>
+                              <div class="form-group">
+                                <label for="formName">Enter name:</label>
+                                <input type="text" class="form-control" id="formName" placeholder="Name">
+                              </div>
+                              <div class="form-group">
+                                <label for="formEmail">Enter email:</label>
+                                <input type="text" class="form-control" id="formEmail" placeholder="Email">
+                              </div>
+                          </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><!--close btn-->
               </div>
             </div>
           </div>
