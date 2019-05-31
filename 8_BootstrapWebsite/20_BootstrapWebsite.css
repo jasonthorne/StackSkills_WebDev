@@ -62,3 +62,8 @@ h5.modal-title{ /*center the modal title*/
 .footerImg{
     padding: 15px;
 }
+
+/*adding colour to Facebook icon*/
+.fa-facebook-square{
+    color: #3b5998; /*facebook blue */
+}
