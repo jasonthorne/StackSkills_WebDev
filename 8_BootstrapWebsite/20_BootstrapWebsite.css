@@ -63,7 +63,26 @@ h5.modal-title{ /*center the modal title*/
     padding: 15px;
 }
 
-/*adding colour to Facebook icon*/
+/*fab class from fontawesome icons:*/
+.fab{
+    margin: 10px;
+
+}
+
 .fa-facebook-square{
     color: #3b5998; /*facebook blue */
 }
+
+.fa-google-plus-square{
+    color: #c32f10; /*google red */
+}
+
+.fa-instagram{
+    color: #ffffff; 
+}
+
+/*wrapper class to center icons*/
+.iconWrapper{
+    margin: auto; 
+}
+
