@@ -1,0 +1,10 @@
+node - run node command module
+node file.js - run js file with node
+ctrl+c - exit
+
+======vim:
+
+vim filename.js - create and open a js file
+i - insert mode 
+esc - exit insert mode
+shift+; then x - save and quit 
